@@ -1,0 +1,26 @@
+{
+  "experiment": "Cross-layer feature correspondence",
+  "model": "Qwen2.5-3B Base",
+  "transitions": 35,
+  "matches_per_transition": 256,
+  "total_pairs": 8960,
+  "permutations": 499,
+  "correction": "Global max-statistic FWER correction across all 8,960 matched pairs and 35 transitions",
+  "validation_mean_correlation": 0.46632593077924217,
+  "test_mean_correlation": 0.08915785729363311,
+  "test_median_correlation": 0.0,
+  "validation_test_pairwise_pearson_r": 0.23925109849041126,
+  "validation_test_pairwise_pearson_p": 7.703167438536658e-117,
+  "global_significant_pairs": 17,
+  "global_significant_fraction": 0.0018973214285714286,
+  "observed_global_max_abs_correlation": 0.9996033310890198,
+  "global_experiment_max_statistic_p": 0.002,
+  "global_null_95th_percentile": 0.9724464416503906,
+  "limitations": [
+    "The permutation p-values are discrete with 499 permutations.",
+    "The max-statistic correction controls family-wise error across all tested pairs under the specified block-permutation null.",
+    "Correlation does not establish causal feature identity.",
+    "SAE reconstruction quality varies across layers.",
+    "This experiment does not establish splitting, merging, polysemanticity, or progressive disentanglement."
+  ]
+}
